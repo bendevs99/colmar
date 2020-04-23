@@ -63,6 +63,9 @@ i{
     font-size: 40rem;
     font-weight: 900;
 }
+.start-here h3{
+    margin: 30rem 0;
+}
 .start-here h4{
     background-color: rgb(53, 51, 51);
     color: white;
@@ -89,6 +92,7 @@ i{
 }
 .emmanuel{
     font-weight: 500;
+    margin-bottom: 32rem;
 }
 /* campus news boxes */
 .box-container{
@@ -116,6 +120,15 @@ i{
 }
 .guest-lecture{
     background-color: rgb(192, 190, 190);
+}
+/*the classes section */
+.learn{
+    background-color: rgb(192, 190, 190);
+}
+.learn h2{
+  text-align: center;
+  padding: 32rem 0;
+  font-size: 36rem;
 }
 
 
@@ -179,13 +192,30 @@ i{
     .campus-news img, .small-box{
         width: 100%;
     }
-    .campus-news h3,.campus-news p{
+    .campus-news h3,.campus-news p,{
         margin-left: 16px;
     }
-    .campus-border,{
+    .campus-border{
         border-bottom: none;
+        border-top: none;
     }
-    .guest-lecture{
+    .guest-lecture, .learn{
         background-color: white;
+    }
+    /* the classes section */
+    .learn{
+        border-top: 1px solid rgb(192, 190, 190);
+        border-bottom: 1px solid rgb(192, 190, 190);
+        padding-bottom: 0 0 24px 16px;
+    }
+    .learn h2{
+        padding-bottom: 16px; 
+    }
+    .classes h3{
+        background-color: rgb(192, 190, 190);
+        padding: 16px 0 24px 16px;
+        margin: 0 0 8px 16px;
+
+
     }
 }
