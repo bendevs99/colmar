@@ -1,12 +1,15 @@
 *{
     font-family: 'Noto Sans JP', sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
 html{
     font-size: 1px;
 }
 body{
     font-size: 18rem;
-    margin: 0;
+    margin: 0; 
     color: rgb(53, 51, 51)
 }
 .mobile{
@@ -19,19 +22,16 @@ a{
 /*header section desktop version */
 header{
     height: 64rem;
-    margin-top: 20rem;
+    margin: 20rem 0 0 24rem;
 }
 .desktop{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 i{
     font-size: 32rem;
-    margin-left: 24rem;
-}
-.colmar{
-    color: rgb(53, 51, 51);
 }
 .academy{
     color: rgb(109, 107, 107);
@@ -69,13 +69,64 @@ i{
     text-align: center;
     padding: 10rem 0;
 }
+/* Orientation bo section */
+.orientation{
+    display: flex;
+}
+/* practicing portion */
+.practice{
+    margin: auto 24rem;
+    width: 60%;
+}
+.practice img{
+    width: 100%;
+    margin:32rem auto;
+}
+.practice h2{
+    margin: 0;
+    font-weight: 800;
+    font-size: 40rem;
+}
+.emmanuel{
+    font-weight: 500;
+}
+/* campus news boxes */
+.box-container{
+    display: flex;
+    align-items: center;
+    margin-top: 16rem;
+}
+.campus-border{
+    border-top: 1px double rgb(192, 190, 190);
+}
+.campus-news{
+    width: 40%;
+    border-left: 1px solid rgb(192, 190, 190);
+}
+.campus-news a{
+    color: royalblue;
+}
+.campus-news img{
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+.small-box{
+    width: 65%;
+}
+.guest-lecture{
+    background-color: rgb(192, 190, 190);
+}
+
 
 
 /*media query section for mobile phones */
 @media only screen and (max-width: 600px){
+
     .desktop{display: none;}
     .mobile, .start-learning{
         display: block;
+        overflow: auto;
     }
     html{
         font-size: 1.2px;
@@ -99,6 +150,7 @@ i{
     .start-here{
         margin-left: 16px;
         color: rgb(53, 51, 51);
+        height: 100%;
     }
     .start-here h2{
         color: rgb(53, 51, 51); 
@@ -108,7 +160,32 @@ i{
     .start-here h4{
         background-color: rgb(129, 129, 129);
         text-align: center;
-        margin-right: 16px;
         color: white;
+        margin: 24px 16px 32px 0;
+    }
+    /* Orientation mobile sectioin */
+    .box-container{
+        display: block;
+    }
+    .orientation{
+        display: block;
+        margin: 0;
+    }
+    .campus-news{
+        margin: 16px 16px 0 16px;
+        width: auto;
+        border-left: none;
+    }
+    .campus-news img, .small-box{
+        width: 100%;
+    }
+    .campus-news h3,.campus-news p{
+        margin-left: 16px;
+    }
+    .campus-border,{
+        border-bottom: none;
+    }
+    .guest-lecture{
+        background-color: white;
     }
 }
