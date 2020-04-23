@@ -195,6 +195,12 @@ i{
     .campus-news h3,.campus-news p,{
         margin-left: 16px;
     }
+    .campus-news img{
+        margin: 0;
+    }
+    .small-box{
+        margin: 16px;
+    }
     .campus-border{
         border-bottom: none;
         border-top: none;
@@ -213,9 +219,9 @@ i{
     }
     .classes h3{
         background-color: rgb(192, 190, 190);
+        color: rgb(53, 51, 51);
+        opacity: .8;
         padding: 16px 0 24px 16px;
         margin: 0 0 8px 16px;
-
-
     }
 }
