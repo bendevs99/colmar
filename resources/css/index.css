@@ -1,7 +1,7 @@
 *{
     font-family: 'Noto Sans JP', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 html{
@@ -90,6 +90,9 @@ i{
     font-weight: 800;
     font-size: 40rem;
 }
+.practice p{
+    margin: 24rem 0;
+}
 .emmanuel{
     font-weight: 500;
     margin-bottom: 32rem;
@@ -123,12 +126,40 @@ i{
 }
 /*the classes section */
 .learn{
-    background-color: rgb(192, 190, 190);
+    background-color: rgb(231, 231, 231);
+    padding-bottom: 32rem;
+
 }
 .learn h2{
   text-align: center;
-  padding: 32rem 0;
+  padding-top: 32rem;
   font-size: 36rem;
+}
+.course-box{
+    display: flex;
+    justify-content: center;
+    margin: 0 40rem;    
+}
+.course{
+    width: 25%;
+    height: 350rem;
+    margin: 32rem;
+    background-color: white;
+}
+.course img{
+    height: auto;
+    width: 100%;
+}
+.capital-course{
+    padding: 8rem 0;
+    font-weight: 400;
+}
+.course h3, .course p{
+    padding-left: 16rem;
+}
+.course h3{
+    padding-top: 16rem;
+
 }
 
 
@@ -217,7 +248,7 @@ i{
     .learn h2{
         padding-bottom: 16px; 
     }
-    .classes h3{
+    .mobile-course h3{
         background-color: rgb(192, 190, 190);
         color: rgb(53, 51, 51);
         opacity: .8;
