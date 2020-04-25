@@ -19,18 +19,40 @@ body{
 a{
     text-decoration: none;
 }
+.side-content{
+    width: 40%;
+    border-left: 1px solid rgb(192, 190, 190);
+}
+.side-content a{
+    color: royalblue;
+}
+.side-content img{
+    width: 35%;
+    height: auto;
+    margin: 16px;
+}
+.small-box{
+    width: 65%;
+}
+.grey-box{
+    background-color: rgb(192, 190, 190);
+}
+.box-container{
+    display: flex;
+    align-items: center;
+}
 /*header section desktop version */
 header{
     height: 64rem;
     margin: 20rem 0 0 24rem;
 }
-.desktop{
+.desktop-header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-i{
+header i{
     font-size: 32rem;
 }
 .academy{
@@ -75,6 +97,7 @@ i{
 /* Orientation bo section */
 .orientation{
     display: flex;
+    margin-top: 32rem;
 }
 /* practicing portion */
 .practice{
@@ -83,7 +106,7 @@ i{
 }
 .practice img{
     width: 100%;
-    margin:32rem auto;
+    margin-bottom:32rem ;
 }
 .practice h2{
     margin: 0;
@@ -98,32 +121,11 @@ i{
     margin-bottom: 32rem;
 }
 /* campus news boxes */
-.box-container{
-    display: flex;
-    align-items: center;
-    margin-top: 16rem;
-}
+
 .campus-border{
     border-top: 1px double rgb(192, 190, 190);
 }
-.campus-news{
-    width: 40%;
-    border-left: 1px solid rgb(192, 190, 190);
-}
-.campus-news a{
-    color: royalblue;
-}
-.campus-news img{
-    width: 35%;
-    height: auto;
-    margin: 16px;
-}
-.small-box{
-    width: 65%;
-}
-.guest-lecture{
-    background-color: rgb(192, 190, 190);
-}
+
 /*the classes section */
 .learn{
     background-color: rgb(231, 231, 231);
@@ -138,6 +140,7 @@ i{
 .course-box{
     display: flex;
     justify-content: center;
+    overflow-wrap: break-word;
     margin: 0 40rem;    
 }
 .course{
@@ -162,6 +165,56 @@ i{
     padding-top: 16rem;
 
 }
+/* thesis section */
+.thesis{
+    display: flex;
+    overflow-wrap: break-word;
+}
+.thesis-heading{
+    font-size: 36rem;
+    text-align: center;
+    margin: 32rem 0;
+}
+.thesis video{
+    width: 100%;
+    margin-right: 24rem;
+}
+.thesis-left{
+    margin-left: 24rem;
+    width: 60%;
+}
+.thesis-left h3{
+    margin: 24rem 0 8rem 0;
+
+}
+.thesis-left p{
+    margin-bottom: 32rem;
+}
+#thesis-side{
+    align-items: flex-start;
+    margin-left: 24rem;
+    border-left: none;
+}
+.thesis-box{
+    margin: 0 auto;
+}
+/* footer section */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 16rem 24rem 32rem 24rem;
+    opacity: .8;
+    
+}
+.end i{
+    font-size: 20rem;
+}
+.end p{
+    display: inline-block;
+    align-items: center;
+}
+
 
 
 
@@ -216,18 +269,18 @@ i{
         display: block;
         margin: 0;
     }
-    .campus-news{
+    .side-content{
         margin: 16px 16px 0 16px;
         width: auto;
         border-left: none;
     }
-    .campus-news img, .small-box{
+    .side-content img, .small-box{
         width: 100%;
     }
-    .campus-news h3,.campus-news p,{
+    .side-content h3,.side-content p,{
         margin-left: 16px;
     }
-    .campus-news img{
+    .side-content img{
         margin: 0;
     }
     .small-box{
@@ -237,7 +290,7 @@ i{
         border-bottom: none;
         border-top: none;
     }
-    .guest-lecture, .learn{
+    .grey-box, .learn{
         background-color: white;
     }
     /* the classes section */
@@ -257,13 +310,19 @@ i{
         margin: 0 0 8px 16px;
     }
     /* Thesis exhibit section */
-    .thesis h2{
+    .thesis-heading{
         text-align: center;
         padding: 32px 0 16px 0;
+        margin: 0;
+    }
+    .thesis-left{
+        width: 100%;
+        margin:0;
     }
     .thesis video{
         width: 100%;
         height: auto;
         margin-bottom: 24px;
+        margin-right: 0;
     }
 }
